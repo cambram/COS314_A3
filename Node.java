@@ -11,6 +11,11 @@ public class Node {
         this.weight = 0.0;
     }
 
+    public Node(double v) {
+        this.value = v;
+        this.weight = 0.0;
+    }
+
     public double getValue() {
         return this.value;
     }

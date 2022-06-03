@@ -6,11 +6,6 @@ public class Node {
         this.weight = w;
     }
 
-    public Node(double v) {
-        this.value = v;
-        this.weight = 0.0;
-    }
-
     public Node() {
         this.value = 0.0;
         this.weight = 0.0;

@@ -20,4 +20,7 @@ public class NeuralNetwork {
         }
     }
 
+    public void train(String answer) {
+    }
+
 }

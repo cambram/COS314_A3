@@ -1,9 +1,21 @@
 public class Node {
-    private double input, bias, weight;
+    private double value, weight;
 
-    public Node(double i, double b, double w) {
-        this.input = i;
-        this.bias = b;
+    public Node(double v, double w) {
+        this.value = v;
         this.weight = w;
+    }
+
+    public Node() {
+        this.value = 0.0;
+        this.weight = 0.0;
+    }
+
+    public double getValue() {
+        return this.value;
+    }
+
+    public double getWeight() {
+        return this.weight;
     }
 }

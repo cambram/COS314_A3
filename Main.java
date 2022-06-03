@@ -28,15 +28,19 @@ public class Main {
         }
 
         Node[] input = new Node[4]; // Node array to temporarily hold inputs
+        input[0] = new Node();
+        input[1] = new Node();
+        input[2] = new Node();
+        input[3] = new Node();
         // Loop through every datapoint in balance-scale
         for (int i = 0; i < datapoints.size(); i++) {
             // Assigning the input data (datapoints.get(i)[0] is the correct class)
             for (int j = 1; j < 5; j++) {
-                Node node = new Node(Double.parseDouble(datapoints.get(i)[j]));
-                input[j - 1] = node;
+                input[j - 1].setValue(Double.parseDouble(datapoints.get(i)[j]));
             }
             NeuNet.setInputs(input);
             NeuNet.train(datapoints.get(i)[0]);
+            NeuNet.clearInputs();
         }
     }
 }

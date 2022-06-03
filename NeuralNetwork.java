@@ -14,6 +14,12 @@ public class NeuralNetwork {
         }
     }
 
+    public void clearInputs() {
+        for (int i = 0; i < 4; i++) {
+            inputNodes[i].setValue(0.0);
+        }
+    }
+
     public void setInputs(Node[] nodes) {
         for (int i = 0; i < 4; i++) {
             inputNodes[i] = nodes[i];

@@ -8,7 +8,9 @@ public class Node {
 
     public Node() {
         this.value = 0.0;
-        this.weight = 0.0;
+        double[] rng = { -0.5, -0.4, -0.3, -0.2, -0.1, 0.1, 0.2, 0.3, 0.4, 0.5 };
+        int i = (int) Math.floor(Math.random() * (9 - 0 + 1) + 0);
+        this.weight = rng[i];
     }
 
     public double getValue() {

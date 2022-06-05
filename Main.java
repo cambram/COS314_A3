@@ -28,5 +28,6 @@ public class Main {
         }
 
         NeuNet.train(datapoints);
+        NeuNet.test(datapoints);
     }
 }
